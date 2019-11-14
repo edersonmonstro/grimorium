@@ -28,3 +28,39 @@ npm add bcrypt.js
 ```
 npm add jsonwebtoken
 ```
+
+# REST Requests
+* GET root
+```
+{{ base_url  }}
+```
+
+* POST Registrar
+```
+{{ base_url  }}/aut/registrar
+
+{
+	"nome" : "Ederson",
+	"senha" : "12345",
+	"email" : "edersonmedeiros@gmail.com"
+}
+```
+
+* POST Autenticar
+```
+{{ base_url  }}/aut/autenticar
+
+{
+	"email" : "edersonmedeiros@gmail.com",
+	"senha" : "12345"
+}
+```
+
+* GET Projeto (teste de token)
+```
+{{ base_url  }}/projeto
+
+HEADER Authorization
+VALUE  Bearer asdasdasdasdasd
+```
+

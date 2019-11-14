@@ -15,12 +15,12 @@ module.exports = (req, res, next) => {
 
     if (!/^Bearer$/i.test(scheme)) return res.status(401).send({erro : 'grimorium >> ERRO : token mal formado'});
 
+    console.log(autConfig.segredo);
+
     jwt.verify(token, autConfig.segredo, (err, decoded) => {
         if (err) return res.status(401).send({erro : 'grimorium >> ERRO : token inválido'});
 
-        req.userId = decoded.id; // id que foi criada ao gerar token pro usuario no autController/autenticar
-        console.log('request usr id', req.userId);
-        console.log('decoded id', decoded.id);
+        req.userId = decoded.params.id; // id que foi criada ao gerar token pro usuario no autController/autenticar
 
         return next();
     });
