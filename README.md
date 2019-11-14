@@ -15,3 +15,7 @@ npm add express
 npm add body-parser
 ```
 
+* adicionando mongoose - facilitador do mongdb
+```
+npm add body-parser
+```
