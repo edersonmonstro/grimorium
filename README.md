@@ -24,3 +24,7 @@ npm add body-parser
 ```
 npm add bcrypt.js
 ```
+* adicionando json web token - tokenizador de sessão - pacote oficial do node para jwt
+```
+npm add jsonwebtoken
+```

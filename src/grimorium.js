@@ -7,7 +7,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // passando controller com suas rotas para o express
-require('./controllers/AutController')(app);
+require('./controllers/autController')(app);
+require('./controllers/projetoController')(app);
 
 // exemplo de rota em express
 //app.get('/', (req, res) => {
