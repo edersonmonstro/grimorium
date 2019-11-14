@@ -19,3 +19,8 @@ npm add body-parser
 ```
 npm add body-parser
 ```
+
+* adicionando bcrypt.js - encriptador/decriptador
+```
+npm add bcrypt.js
+```
